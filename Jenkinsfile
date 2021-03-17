@@ -16,7 +16,7 @@ pipeline {
 
         stage('mail') {
           steps {
-            mail(subject: 'test', body: 'hh', from: 'jenkins', to: 'gihyeon_lee@tmax.co.kr')
+            mail(subject: 'test', body: 'hh', from: '@tmax.co.kr', to: 'gihyeon_lee@tmax.co.kr')
           }
         }
 
