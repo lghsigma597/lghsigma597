@@ -6,7 +6,7 @@ pipeline {
 
   }
   stages {
-    stage('hi') {
+    stage('test') {
       parallel {
         stage('hi') {
           steps {
@@ -14,7 +14,7 @@ pipeline {
           }
         }
 
-        stage('??') {
+        stage('mail') {
           steps {
             mail(subject: 'test', body: 'hh', from: 'jenkins', to: 'gihyeon_lee@tmax.co.kr')
           }
