@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.8)
 
 # Macros
 set(CMAKE_CXX_COMPILER clang++)
-set(CMAKE_CXX_FLAGS "-m64")
+set(CMAKE_CXX_FLAGS "-m64 -g -fprofile-arcs -ftest-coverage")
 add_definitions("-Wall -std=c++14")
 
 # Source files
